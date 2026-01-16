@@ -1,0 +1,223 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="title">黄思柏 | 科技感个人网站</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="ambient">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <div class="brand-text">
+          <span class="brand-name" data-i18n="brand-name">黄思柏</span>
+          <span class="brand-tag" data-i18n="brand-tag">本科生</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about" data-i18n="nav-about">关于</a>
+        <a href="#projects" data-i18n="nav-projects">项目</a>
+        <button class="nav-button" type="button" data-page-switch="blog" data-i18n="nav-blog">博客</button>
+        <a href="#contact" data-i18n="nav-contact">联系</a>
+      </nav>
+      <button class="lang-toggle" data-lang-toggle aria-label="切换语言" title="切换为英文">中文 / EN</button>
+    </div>
+  </header>
+
+  <main class="page" data-page-root>
+    <div class="page-view is-active" data-page="home">
+    <section class="hero container">
+      <div class="hero-media" data-reveal>
+        <div class="avatar-shell">
+          <div class="avatar-core"><img src="assets/icon.png" alt="头像"></div>
+        </div>
+        <div class="status-card">
+          <span class="status-dot"></span>
+          <span data-i18n="status">开放合作</span>
+        </div>
+      </div>
+      <div class="hero-content" data-reveal>
+        <p class="eyebrow" data-i18n="eyebrow">你好，我是</p>
+        <h1 class="hero-title" data-i18n="hero-title">黄思柏</h1>
+        <p class="lead" data-i18n-html="hero-lead">是一名热爱编程，热爱生活的计算机er。<br>
+          目前就读于北京大学信息科学技术学院，是一名24级计算机科学与技术专业的学生。<br>
+          我的兴趣主要在CV与大语言模型方向。<br>
+          偶尔会打Valorant。</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects" data-i18n="cta-projects">查看项目</a>
+          <a class="btn ghost" href="#contact" data-i18n="cta-contact">联系我</a>
+        </div>
+        <div class="info-row">
+          <div class="info-card">
+            <span class="info-label" data-i18n="info-focus-label">方向</span>
+            <span class="info-value" data-i18n="info-focus-value">计算机科学与技术</span>
+          </div>
+          <div class="info-card">
+            <span class="info-label" data-i18n="info-location-label">位置</span>
+            <span class="info-value" data-i18n="info-location-value">中国 / 北京</span>
+          </div>
+          <div class="info-card">
+            <span class="info-label" data-i18n="info-status-label">状态</span>
+            <span class="info-value" data-i18n="info-status-value">可合作</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container" data-reveal>
+      <div class="section-head">
+        <h2 data-i18n="about-title">关于我</h2>
+        <p data-i18n="about-subtitle">热衷用清晰的交互与视觉语言让技术更可感</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3 data-i18n="stack-title">技术栈</h3>
+          <p data-i18n="stack-desc">编程语言与软技能</p>
+          <div class="chip-group">
+            <span>C</span>
+            <span>C++</span>
+            <span>Python</span>
+          </div>
+        </div>
+        <div class="about-card">
+          <h3 data-i18n="focus-title">正在关注</h3>
+          <p data-i18n="focus-desc">关注计算机视觉、强化学习与大语言模型方向。</p>
+          <div class="chip-group">
+            <span data-i18n="focus-chip-cv">CV</span>
+            <span data-i18n="focus-chip-rl">强化学习</span>
+            <span data-i18n="focus-chip-llm">大语言模型</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container" data-reveal>
+      <div class="section-head">
+        <h2 data-i18n="projects-title">项目选集</h2>
+        <p data-i18n="projects-desc">以下为我近期完成的项目，点击可查看源码。</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-meta" data-i18n="project-1-meta">桌面应用 / Qt + C++</div>
+          <h3 data-i18n="project-1-title">北大树坑 · 校园论坛系统</h3>
+          <p data-i18n="project-1-desc">基于 Qt 的客户端-服务器校园论坛，支持发帖、评论、收藏、搜索与匿名发布，采用 JSON 通信与多客户端并发。</p>
+          <div class="project-links">
+            <span class="project-tag">Qt / C++17</span>
+            <a class="project-link" href="https://github.com/jsw24000/cpp_groupwork" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-meta" data-i18n="project-2-meta">AI 应用 / 多 Agent</div>
+          <h3 data-i18n="project-2-title">学术论文写作助手</h3>
+          <p data-i18n="project-2-desc">多 Agent 协作写作系统，提供文献推荐、PDF 总结与学术诚信检查，含 PyQt6 桌面端交互。</p>
+          <div class="project-links">
+            <span class="project-tag">Python / PyQt6</span>
+            <a class="project-link" href="https://github.com/dreamawakener/ai_homework" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-meta" data-i18n="project-3-meta">桌面游戏 / C++ + EasyX</div>
+          <h3 data-i18n="project-3-title">五子棋 · Renju Game</h3>
+          <p data-i18n="project-3-desc">基于 C++ 与 EasyX 的五子棋小游戏，包含菜单界面、双人/人机对战、黑棋禁手规则与存档读档功能。</p>
+          <div class="project-links">
+            <span class="project-tag">C++ / EasyX</span>
+            <a class="project-link" href="https://github.com/huang51966/Renju-game" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container" data-reveal>
+      <div class="section-head">
+        <h2 data-i18n="contact-title">联系</h2>
+        <p data-i18n="contact-desc">如果你有新项目或合作想法，欢迎联系。</p>
+      </div>
+      <div class="contact-card">
+        <div>
+          <div class="contact-label" data-i18n="contact-email-label">邮箱</div>
+          <div class="contact-value">2400013100@stu.pku.edu.cn</div>
+        </div>
+        <div>
+          <div class="contact-label" data-i18n="contact-github-label">GitHub</div>
+          <div class="contact-value contact-value-inline">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false">
+                <path fill="currentColor" d="M12 2C6.477 2 2 6.52 2 12.07c0 4.45 2.865 8.22 6.839 9.55.5.09.682-.22.682-.49 0-.24-.009-.87-.013-1.71-2.782.62-3.369-1.37-3.369-1.37-.454-1.17-1.11-1.48-1.11-1.48-.908-.63.069-.62.069-.62 1.004.07 1.533 1.05 1.533 1.05.892 1.55 2.341 1.1 2.91.84.09-.66.35-1.1.636-1.36-2.22-.26-4.555-1.13-4.555-5.04 0-1.11.39-2.02 1.03-2.73-.103-.26-.447-1.3.098-2.7 0 0 .84-.27 2.75 1.04a9.36 9.36 0 0 1 2.5-.35c.85 0 1.705.12 2.5.35 1.91-1.31 2.75-1.04 2.75-1.04.545 1.4.201 2.44.099 2.7.64.71 1.03 1.62 1.03 2.73 0 3.92-2.339 4.78-4.566 5.04.36.32.68.94.68 1.9 0 1.37-.012 2.47-.012 2.81 0 .27.18.59.69.49A10.02 10.02 0 0 0 22 12.07C22 6.52 17.523 2 12 2z"/>
+              </svg>
+            </span>
+            <a class="contact-link" href="https://github.com/huang51966" target="_blank" rel="noopener">huang51966</a>
+          </div>
+        </div>
+        <div class="contact-action">
+          <button class="btn primary" type="button" data-copy-email data-email="2400013100@stu.pku.edu.cn" data-i18n="copy-email">复制邮箱</button>
+          <span class="copy-toast" role="status" aria-live="polite" data-copy-toast data-i18n="copy-toast">已复制邮箱</span>
+        </div>
+      </div>
+    </section>
+    </div>
+    <div class="page-view" data-page="blog">
+      <section class="section container blog-hero">
+        <div class="blog-header">
+          <div class="section-head">
+            <h2 data-i18n="blog-title">博客</h2>
+            <p data-i18n="blog-desc">记录学习与项目的思考，以及一些有趣的技术片段。</p>
+          </div>
+          <button class="btn ghost" type="button" data-page-switch="home" data-i18n="blog-back">返回主页</button>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-meta" data-i18n="blog-1-meta">2025.01 · 学习笔记</div>
+            <h3 data-i18n="blog-1-title">从博弈到搜索：五子棋 AI 的小结</h3>
+            <p data-i18n="blog-1-desc">记录评分函数、禁手判断与对局体验的实现要点。</p>
+            <div class="blog-footer">
+              <span class="blog-tag">AI / C++</span>
+              <span class="blog-status" data-i18n="blog-1-status">草稿</span>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-meta" data-i18n="blog-2-meta">2024.12 · 项目复盘</div>
+            <h3 data-i18n="blog-2-title">视觉与交互：EasyX 项目体验总结</h3>
+            <p data-i18n="blog-2-desc">复盘界面动效、可用性设计与代码结构优化思路。</p>
+            <div class="blog-footer">
+              <span class="blog-tag">UI / 交互</span>
+              <span class="blog-status" data-i18n="blog-2-status">整理中</span>
+            </div>
+          </article>
+          <article class="blog-card">
+            <div class="blog-meta" data-i18n="blog-3-meta">2024.11 · 研究方向</div>
+            <h3 data-i18n="blog-3-title">CV 与大语言模型的交叉可能性</h3>
+            <p data-i18n="blog-3-desc">记录近期阅读的想法，以及可能的研究方向。</p>
+            <div class="blog-footer">
+              <span class="blog-tag">CV / LLM</span>
+              <span class="blog-status" data-i18n="blog-3-status">构思中</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
